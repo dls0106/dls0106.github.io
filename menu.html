@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		list-style-type: none;
+	}
+	.clear {
+		clear: both;
+	}
+	#page{
+		width: 1300px;
+		margin: auto;
+		/*border: 1px solid #bbbbbb;*/
+	}
+	header{
+		width: 1300px;
+		height: 100px;
+		margin-top: 10px;
+		/*border : 1px solid #bbbbbb;*/
+	}
+	nav{
+		width: 1300px;
+		height: 70px;
+		margin-top: 10px
+		/*border: 1px solid #bbbbbb;*/
+	}
+	nav li{
+		display: inline-block;
+		margin: 20px 30px;
+	}
+	#first{
+		font-size: 20px;
+		border-bottom: 1px solid gray;
+		width: 150px;
+		font-weight: bold;
+	}
+	aside{
+		float: left;
+		/*border: 1px solid #bbbbbb;*/
+		margin: 30px 0 0 30px;
+		width: 200px;
+		height: 800px;
+	}
+	aside li{
+		margin-bottom: 30px;
+	}
+	#main{
+		border-bottom: 1px solid black;
+		margin: 10px 0 0 200px;
+		padding: 0 0 10px 10px;
+		width: 1000px;
+	}
+	#sub{
+		width: 1300px;
+		border-bottom: 1px solid gray;
+		padding-bottom: 20px;
+	}
+	#sub li{
+		display: inline-block;
+		margin: 10px 10px 0 0;
+		overflow: hidden;
+		text-align: center;
+		padding-bottom: 5px;
+		border: 1px solid rgb(180,180,180);
+	}
+	#sub img{
+		width: 300px;
+		height: 200px;
+		display: block;
+	}
+	#sub img:hover{
+		transform: scale(1.1);
+		transition: transform 0.5s;
+	}
+	#num{
+		margin: 0 0 10px 500px;
+	}
+	#address {
+		float: left;
+		margin: 10px 0 0 10px;
+	}
+	#customer{
+		float: right;
+		margin: 10px 0 0 180px;
+
+	</style>
+</head>
+<body id="page">
+<header>
+	<div id="logo">
+	<img src="./t/name.png">
+	</div>
+</header>
+<div class="clear"></div>
+<nav>
+	<ul>
+		<li>감염병</li>
+		<li>건강정책</li>
+		<li>정책정보</li>
+		<li>연구개발</li>
+		<li>알림 자료</li>
+		<li>간행물 통계</li>
+		<li>민원정보 공개</li>
+		<li>기관소개</li>
+		<li>사업별홈페이지</li>
+	</ul>
+</nav>
+<div class="clear"></div>
+<aside>
+	<ul>
+		<li id="first"> 알림/자료 </li>
+		<li> 보도자료 </li>
+		<li> 포토뉴스 </li>
+		<li> 홍보자료 </li>
+		<li>공지사항</li>
+		<li>공고/공시</li>
+		<li>채용공고</li>
+		<li>법령,지침,서식</li>
+	</ul>
+</aside>
+<section>
+	<h2 id="main">이달의 건강소식</h2>
+</section>
+<section id="sub">
+	<ul>
+		<li><img src="./s/sec01.PNG"><br>코로나19 예방과 함께 알아두어야 할</li>
+		<li><img src="./s/sec02.PNG"><br>새로운 일상, 생활 속 거리두기</li>
+		<li><img src="./s/sec03.PNG"><br>새로운 일상, 생활 속 거리두기</li>
+		<li><img src="./s/sec04.PNG"><br>호기심이 많은 우리 아이, 질식사고</li>
+		<li><img src="./s/sec05.PNG"><br>추운 겨울 화상이 웬 말?</li>
+		<li><img src="./s/sec06.PNG"><br>갑자기 기온이 뚝!하고 떨어진다면?</li>
+		<li><img src="./s/sec07.PNG"><br>우리 아이 감기 증상, 그냥 둬도 괜찮을</li>
+		<li><img src="./s/sec08.PNG"><br>겨울철 감염병 이렇게 예방하세요!</li>
+		<li ><img src="./s/sec09.PNG"><br>가을철 불청객 알레르기비염</li>
+	</ul>
+</section>
+<div class="clear"></div>
+	<section id="num">
+		<img src="./s/num.PNG">
+	</section>
+<footer>
+	<div id="address">
+		<img src="./t/foot01.PNG">
+	</div>
+	<div id="customer">
+		<img src="./t/foor02.PNG">
+	</div>
+</footer>
+
+</body>
+</html>
