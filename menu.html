@@ -14,21 +14,26 @@
 		clear: both;
 	}
 	#page{
-		width: 1300px;
+		width: 1400px;
 		margin: auto;
 		/*border: 1px solid #bbbbbb;*/
 	}
 	header{
-		width: 1300px;
+	/*	width: 1400px;
 		height: 100px;
 		margin-top: 10px;
 		/*border : 1px solid #bbbbbb;*/
+		width: 1300px;
+		height: 100px;
+		margin-top: 10px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgb(200,200,200); 
 	}
 	nav{
-		width: 1300px;
+		width: 1400px;
 		height: 70px;
-		margin-top: 10px
-		/*border: 1px solid #bbbbbb;*/
+		margin-top: 10px;
+		border-bottom: 1px solid rgb(200,200,200); 
 	}
 	nav li{
 		display: inline-block;
@@ -36,23 +41,39 @@
 	}
 	#first{
 		font-size: 20px;
-		border-bottom: 1px solid gray;
-		width: 150px;
+		border-bottom: 2px solid gray;
+		width: 250px;
+		font-weight: bold;
+	}
+	#mint{
+		background-color: rgb(65,160,140);
+		color: white;
 		font-weight: bold;
 	}
 	aside{
 		float: left;
 		/*border: 1px solid #bbbbbb;*/
-		margin: 30px 0 0 30px;
-		width: 200px;
+		margin: 10px 0 0 30px;
+		width: 300px;
 		height: 800px;
 	}
 	aside li{
-		margin-bottom: 30px;
+		width: 250px;
+		height: 45px;
+		padding: 16px 0 0 10px;
+		border-bottom: 1px solid rgb(190,190,190);
+	}
+	aside img{
+		float: right;
+		margin: 3px 3px 0 0;
+	}
+	#v:hover{
+		transform: rotate(180deg);
+		transition: transform 0.2s;
 	}
 	#main{
 		border-bottom: 1px solid black;
-		margin: 10px 0 0 200px;
+		margin: 30px 0 0 300px;
 		padding: 0 0 10px 10px;
 		width: 1000px;
 	}
@@ -88,13 +109,85 @@
 	#customer{
 		float: right;
 		margin: 10px 0 0 180px;
+	}
+	#logo {
+		float: left;
+		margin-top: 10px;
+		/*border: 1px solid black;*/
+	}
+	input{
+		margin: 0 0 0 100px;
+		width: 400px;
+		height: 45px;
+		border:  2px solid rgb(65,160,140);
 
+	}
+	#se{
+		float: right;
+		width: 50px;
+		height: 50px;
+		margin-top: 40px;
+	}
+	#top {
+		float: right;
+		margin: 30px 20px 0 0;
+		/*border: 1px solid black;*/
+	}
+	#mypage{
+		padding-right: 60px;
+	}
+	#eng{
+		padding-left: 20px;
+	}
+	#dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown{
+		position: absolute;
+		display: none;
+		background-color: white;
+		border: 1px solid gray;
+		width: 180px;
+	}
+	.dropdown li{
+		display: block;
+		padding:10px 0 10px 10px;
+	}
+	.keyword{
+		padding:5px 10px 5px 0px;
+		border-bottom: 1px solid gray;
+		color: rgb(20,100,150);
+		text-align: center;
+		font-weight: bold;
+	}
+		#dropdown:hover .dropdown {
+		display: block;
+	}
 	</style>
 </head>
 <body id="page">
 <header>
 	<div id="logo">
-		<img src="./t/name.PNG">
+	<a href="index.html"><img src="./t/name.PNG"></a><input type="text" placeholder="검색어를 입력해주세요."> <img id="se" src="./pl/search.PNG">
+	</div>
+	<div id="top">
+		<img src="./pl/num.PNG"> <div id="dropdown"> <a id="mypage" href="mypage.html"> 마이페이지 </a>  <img id="v" src="./pl/v.PNG">
+		<ul class="dropdown">
+			<li class="keyword">인기키워드</li>
+			<li>1 코로나 19</li>
+			<li>2 메르스</li>
+			<li>3 자가격리</li>
+			<li>4 코로나19 예방수칙</li>
+			<li>5 손씻기</li>
+			<li>6 대응지침</li>
+			<li>7 마스크</li>
+			<li>8 포스터</li>
+			<li>9 방역</li>
+			<li>10 사회적 거리두기</li>
+		</ul>
+		</div>
+		<img id="eng" src="./pl/eng.PNG">
 	</div>
 </header>
 <div class="clear"></div>
@@ -115,13 +208,14 @@
 <aside>
 	<ul>
 		<li id="first"> 알림/자료 </li>
-		<li> 보도자료 </li>
-		<li> 포토뉴스 </li>
-		<li> 홍보자료 </li>
-		<li>공지사항</li>
-		<li>공고/공시</li>
-		<li>채용공고</li>
-		<li>법령,지침,서식</li>
+		<li id="mint"> 이달의 건강소식 <img src="./pl/mint.PNG"> </li>
+		<li> 보도자료 <img id="v" src="./pl/pl.PNG"> </li>
+		<li> 포토뉴스 <img id="v" src="./pl/pl.PNG"> </li>
+		<li> 홍보자료 <img id="v" src="./pl/pl.PNG"> </li>
+		<li>공지사항 <img id="v" src="./pl/pl.PNG"></li>
+		<li>공고/공시 <img id="v" src="./pl/pl.PNG"></li>
+		<li>채용공고 <img id="v" src="./pl/pl.PNG"></li>
+		<li>법령,지침,서식 <img id="v" src="./pl/pl.PNG"></li>
 	</ul>
 </aside>
 <section>
