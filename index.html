@@ -22,18 +22,21 @@
 		width: 1300px;
 		height: 100px;
 		margin-top: 10px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgb(200,200,200); 
 		/*border : 1px solid #bbbbbb;*/
 	}
 	nav{
 		width: 1300px;
 		height: 70px;
 		margin-top: 10px
+		border-bottom: 1px solid rgb(200,200,200); 
 		/*border: 1px solid #bbbbbb;*/
 	}
-	nav li{
+/*	nav li{
 		display: inline-block;
 		margin: 20px 30px;
-	}
+	}*/
 	section{
 		float: left;
 		margin-top: 10px;
@@ -45,9 +48,27 @@
 		/*border: 1px solid #bbbbbb;*/
 		margin-top: 10px;
 	}
+	aside ul{
+		position: fixed;
+		right: 0px;
+		top: 300px;
+		width: 70px;
+		padding: 5px 5px 0 5px ;
+		border: 2px solid rgb(190,190,190);
+	}
 	aside li{
-		text-align: right;
-		margin-bottom: 30px;
+		text-align: center;
+		padding: 5px 0 10px 0;
+		border-bottom: 1px solid rgb(200,200,200);
+	}
+	.li1{
+		color: rgb(130,150,180);
+		font-weight: bold;
+	}
+	.li2:hover{
+		background-color: rgb(50,80,120);
+		color: white;
+		font-weight: bold;
 	}
 	#sub1{
 		
@@ -112,36 +133,215 @@
 	#logo {
 		float: left;
 		margin-top: 10px;
+		/*border: 1px solid black;*/
+	}
+	input{
+		margin: 0 0 0 100px;
+		width: 400px;
+		height: 45px;
+		border:  2px solid rgb(65,160,140);
+
+	}
+	#se{
+		float: right;
+		width: 50px;
+		height: 50px;
+		margin-top: 40px;
 	}
 	#top {
 		float: right;
 		margin: 30px 20px 0 0;
+		/*border: 1px solid black;*/
 	}
+	#mypage{
+		padding-right: 60px;
+	}
+	#v:hover{
+		transform: rotate(180deg);
+		transition: transform 0.2s;
+	}
+	#eng{
+		padding-left: 20px;
+	}
+	#dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown{
+		position: absolute;
+		display: none;
+		background-color: white;
+		border: 1px solid gray;
+		width: 180px;
+	}
+	.dropdown li{
+		display: block;
+		padding:10px 0 10px 10px;
+	}
+	.keyword{
+		padding:5px 10px 5px 0px;
+		border-bottom: 1px solid gray;
+		color: rgb(20,100,150);
+		text-align: center;
+		font-weight: bold;
+	}
+		#dropdown:hover .dropdown {
+		display: block;
 
+	}
+	#dropdown1{
+		position: relative;
+		display: inline-block;
+		margin: 20px 30px;
+	}
+	.dropdown1{
+		position: absolute;
+		margin-top: 38px;
+		/*padding: 10px;*/
+		display: none;
+		background-color: white;
+		border: 1px solid gray;
+		list-style: inline;
+		width: 180px;
+	}
+	#dropdown1:hover{
+		color: rgb(65,160,140);
+		font-weight: bold;
+		border-bottom: 2px solid rgb(65,160,140);
+	}
+	.dropdown1 li{
+		/*display: inline;*/
+		position: relative;
+	}
+	#dropdown1:hover .dropdown1 {
+		display: block;
+	}
+	#in1{
+		padding: 10px;
+		position: relative;
+		margin: 10px 0 10px 0;
+		border-bottom: 1px solid rgb(200,200,200);
+		color: black;
+		font-weight: normal;
+	}
+	#up{
+		position: fixed;
+		bottom: 50px; right: 50px;
+	}
 	</style>
 </head>
 <body id="page">
 
 <header>
 	<div id="logo">
-	<img src="./t/name.PNG">
+		<img src="./t/name.PNG">
+		<input type="text" placeholder="검색어를 입력해주세요."> <img id="se" src="./pl/search.PNG">
 	</div>
 	<div id="top">
-		로그인 | 회원가입 | <a href="mypage.html">마이페이지</a> | 고객센터
+		<img id="num" src="./pl/num.PNG"> <div id="dropdown"> <a id="mypage" href="mypage.html"> 마이페이지 </a>  <img id="v" src="./pl/v.PNG">
+		<ul class="dropdown">
+			<li class="keyword">인기키워드</li>
+			<li>1 코로나 19</li>
+			<li>2 메르스</li>
+			<li>3 자가격리</li>
+			<li>4 코로나19 예방수칙</li>
+			<li>5 손씻기</li>
+			<li>6 대응지침</li>
+			<li>7 마스크</li>
+			<li>8 포스터</li>
+			<li>9 방역</li>
+			<li>10 사회적 거리두기</li>
+		</ul>
+	</div>
+		
+		<img id="eng" src="./pl/eng.PNG">
 	</div>
 </header>
 <div class="clear"></div>
 <nav>
 	<ul>
-		<li>감염병</li>
-		<li>건강정책</li>
-		<li>정책정보</li>
-		<li>연구개발</li>
-		<li><a href="menu.html">알림 자료</a></li>
-		<li>간행물 통계</li>
-		<li>민원정보 공개</li>
-		<li>기관소개</li>
-		<li>사업별홈페이지</li>
+		<li id="dropdown1">감염병
+			<ul class="dropdown1">
+				<li id="in1">감염병 정보 </li>
+				<li id="in1">해외감염정보</li>
+				<li id="in1">감염병유행정보</li>
+				<li id="in1">결핵</li>
+				<li id="in1">예방접종</li>
+				<li id="in1">감염병간행물</li>
+			</ul>
+		</li>
+		<li id="dropdown1">건강정책
+			<ul class="dropdown1">
+				<li id="in1"> 손상정보 </li>
+				<li id="in1"> 국가건강정보포털 </li>
+				<li id="in1"> 희귀질환정보 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">정책정보
+			<ul class="dropdown1">
+				<li id="in1"> 감염병 </li>
+				<li id="in1"> 생물안전 </li>
+				<li id="in1"> 만성질환 </li>
+				<li id="in1"> 기후변화 </li>
+				<li id="in1"> 의료방사선안전관리 </li>
+				<li id="in1"> 장기,조직,혈액관리 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">연구개발
+			<ul class="dropdown1">
+				<li id="in1"> 질병연구 </li>
+				<li id="in1"> 연구성과 </li>
+				<li id="in1"> 연구자원인프라 </li>
+				<li id="in1"> 생명윤리 </li>
+			</ul>
+		</li>
+		<li id="dropdown1"><a href="menu.html"> 알림 자료 </a>
+			<ul class="dropdown1">
+				<li id="in1"> 이달의건강소식 </li>
+				<li id="in1"> 보도자료 </li>
+				<li id="in1"> 포토뉴스 </li>
+				<li id="in1"> 홍보자료 </li>
+				<li id="in1"> 공지사항 </li>
+				<li id="in1"> 공고/공시 </li>
+				<li id="in1"> 채용공고 </li>
+				<li id="in1"> 법령,지침,서식 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">간행물 통계
+			<ul class="dropdown1">
+				<li id="in1"> 간행물 </li>
+				<li id="in1"> 통계 </li>
+				<li id="in1"> 연구성과 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">민원정보 공개
+			<ul class="dropdown1">
+				<li id="in1"> 1399콜센터 </li>
+				<li id="in1"> 민원신청 </li>
+				<li id="in1"> 나의민원확인 </li>
+				<li id="in1"> 생명윤리법관련민원안내 </li>
+				<li id="in1"> 사전정보공표 </li>
+				<li id="in1"> 정보공개청구 </li>
+				<li id="in1"> 공공데이터 </li>
+				<li id="in1"> 기관장업무추진비 </li>
+				<li id="in1"> 공무국외여행보고서 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">기관소개
+			<ul class="dropdown1">
+				<li id="in1"> 소개 </li>
+				<li id="in1"> 비전과미션 </li>
+				<li id="in1"> 핵심사업 </li>
+				<li id="in1"> 연혁 </li>
+				<li id="in1"> 조직,직원찾기 </li>
+				<li id="in1"> 정부상징 </li>
+				<li id="in1"> 오시는길 </li>
+				<li id="in1"> 시설안내 </li>
+				<li id="in1"> 누리집이용안내 </li>
+			</ul>
+		</li>
+		<li id="dropdown1">사업별홈페이지
+		</li>
 	</ul>
 </nav>
 <div class="clear"></div>
@@ -150,10 +350,10 @@
 </section>
 <aside>
 	<ul>
-		<li> 사용자별맞춤메뉴 </li>
-		<li> 일반인 </li>
-		<li> 연구자 </li>
-		<li> 언론인 </li>
+		<li class="li1"> 사용자별맞춤메뉴 </li>
+		<li class="li2"> 일반인 </li>
+		<li class="li2"> 연구자 </li>
+		<li class="li2"> 언론인 </li>
 	</ul>
 </aside>
 
@@ -194,6 +394,8 @@
 		<img src="./t/foor02.PNG">
 	</div>
 </footer>
+
+<p id="up"><a href="index.html"><img src="./pl/top.PNG"></a></p>
 
 </body>
 </html>
