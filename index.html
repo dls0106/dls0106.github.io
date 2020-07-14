@@ -55,6 +55,7 @@
 		width: 70px;
 		padding: 5px 5px 0 5px ;
 		border: 2px solid rgb(190,190,190);
+		background-color: white;
 	}
 	aside li{
 		text-align: center;
@@ -76,14 +77,37 @@
 	#sub1 li{
 		display: inline-block;
 		text-align: center;
-		padding-right: 20px;
+		margin-right: 20px;
+		padding-bottom: 15px;
+		overflow: hidden;
+	}
+	#sub1 img{
+		display: block;
 	}
 	#sub1 img:hover{
-		box-shadow: 5px 5px 10px gray;
-		transform: translate(5px,-5px);
+	/*	box-shadow: 5px 5px 10px gray;
+		transform: translate(5px,-5px);*/
+		transform: scale(1.1);
+		transition: transform 1s;
+	}
+	#bottom1 {
+		border-bottom: 2px solid rgb(65,160,140);
+	}
+	#bottom2 {
+		border-bottom: 2px solid rgb(50,110,170);
+	}
+	#bottom3 {
+		border-bottom: 2px solid rgb(170,80,150);
+	}
+	#bottom4 {
+		border-bottom: 2px solid rgb(65,160,140);
+	}
+	#quick {
+		padding-top: 15px;
 	}
 	#sub2 {
-
+		padding-top: 20px;
+		height: 150px;
 	}
 	#sub2 img{
 		width: 80px;
@@ -92,12 +116,16 @@
 	}
 	#sub2 li{
 		display: inline-block;
-		padding-right: 20px;
+		padding-left: 20px;
 		text-align: center;
-		width: 160px;
+		width: 130px;
 	}
 	#sub2 img:hover{
 		transform: scale(1.1);
+	}
+	#sub2 li:hover{
+		color: rgb(50,110,170);
+		font-weight: bold;
 	}
 	#sub3{
 
@@ -106,6 +134,11 @@
 		display: inline-block;
 		margin-right: 16px;
 		overflow: hidden;
+		text-align: center;
+		font-size: 12px;
+		color: gray;
+		padding-bottom: 10px;
+		border-bottom: 2px solid gray;
 	}
 	#sub3 img{
 		width: 250px;
@@ -116,19 +149,77 @@
 		transform: scale(1.1);
 		transition: transform 1s;
 	}
+	#sub3 li:hover{
+		border-bottom: 2px solid rgb(65,160,140);
+	}
+	#sub4{
+		border: 1px solid rgb(190,190,190);
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	#sub4 ul{
+		border-bottom: 1px solid rgb(190,190,190);
+		padding: 5px 0 10px 0;
+	}
+	#sub4 li{
+		display: inline;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+	#plus{
+		float: right;
+	}
+	#sub4 li:hover{
+		border-bottom: 2px solid rgb(65,160,140);
+		padding-bottom: 10px;
+		color: rgb(65,160,140);
+	}
+	.sub4{
+		padding: 20px 0 20px 0;
+	}
+	#sub5{
+		padding-left: 10px;
+	}
+	#sub5 img{
+		width: 345px;
+	}
+	#sub6 img{
+		width: 350px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+	}
 	footer{
 		width: 1300px;
 		height: 100px;
 		margin: 10px 0 10px 0
 		/*border 1px solid #bbbbbb;*/
 	}
+	#link{
+		border-top: 1px solid rgb(180,180,180);
+		padding: 10px 0 10px 0;
+		width: 1065px;
+	}
+	#link li{
+		display: inline;
+		padding: 0 0 20px 15px;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	#low{
+		border-top: 1px solid rgb(180,180,180);
+		width: 1065px;
+	}
 	#address {
 		float: left;
 		margin: 10px 0 0 10px;
 	}
+
 	#customer{
-		float: right;
 		margin: 10px 0 0 180px;
+	}
+	#customer img{
+		padding-left: 140px;
+
 	}
 	#logo {
 		float: left;
@@ -152,43 +243,7 @@
 		float: right;
 		margin: 30px 20px 0 0;
 		/*border: 1px solid black;*/
-	}
-	#mypage{
-		padding-right: 60px;
-	}
-	#v:hover{
-		transform: rotate(180deg);
-		transition: transform 0.2s;
-	}
-	#eng{
-		padding-left: 20px;
-	}
-	#dropdown{
-		position: relative;
-		display: inline-block;
-	}
-	.dropdown{
-		position: absolute;
-		display: none;
-		background-color: white;
-		border: 1px solid gray;
-		width: 180px;
-	}
-	.dropdown li{
-		display: block;
-		padding:10px 0 10px 10px;
-	}
-	.keyword{
-		padding:5px 10px 5px 0px;
-		border-bottom: 1px solid gray;
-		color: rgb(20,100,150);
-		text-align: center;
-		font-weight: bold;
-	}
-		#dropdown:hover .dropdown {
-		display: block;
-
-	}
+}
 	#dropdown1{
 		position: relative;
 		display: inline-block;
@@ -223,6 +278,45 @@
 		border-bottom: 1px solid rgb(200,200,200);
 		color: black;
 		font-weight: normal;
+	}
+		
+	#mypage{
+		padding-right: 60px;
+	}
+	#v:hover{
+		transform: rotate(180deg);
+		transition: transform 0.2s;
+	}
+	#eng{
+		padding-left: 20px;
+	}
+	#dropdown{
+		position: relative;
+		display: inline-block;
+
+	}
+	.dropdown{
+		position: absolute;
+		display: none;
+		/*background-image: url(./final/white.PNG);*/
+		border: 1px solid gray;
+		width: 180px;
+	}
+	.dropdown li{
+		display: block;
+		padding:10px 0 10px 10px;
+
+	}
+	.keyword{
+		padding:5px 10px 5px 0px;
+		border-bottom: 1px solid gray;
+		color: rgb(20,100,150);
+		text-align: center;
+		font-weight: bold;
+	}
+		#dropdown:hover .dropdown {
+		display: block;
+		background-color: white;
 	}
 	#up{
 		position: fixed;
@@ -359,15 +453,19 @@
 
 <section>
 	<ul id="sub1">
-		<li><img src="./t/sec01.PNG" width="250"> <br> 온열질환 건강수칙</li>
-		<li><img src="./t/sec02.PNG" width="250"><br>비브리오패혈증 예방수칙</li>
-		<li><img src="./t/sec03.PNG" width="250"><br>미세먼지 건강수칙</li>
-		<li><img src="./t/sec04.PNG" width="250"><br>코로나19 영상자료</li>
+		<li id="bottom1"><img src="./t/sec01.PNG" width="250"> <br> 온열질환 건강수칙</li>
+		<li id="bottom2"><img src="./t/sec02.PNG" width="250"><br>비브리오패혈증 예방수칙</li>
+		<li id="bottom3"><img src="./t/sec03.PNG" width="250"><br>미세먼지 건강수칙</li>
+		<li id="bottom4"><img src="./t/sec04.PNG" width="250"><br>코로나19 영상자료</li>
 	</ul>
 </section>
-	
+<div class="clear"></div>
+<section>
+	<div id="quick"><img src="./final/quick.PNG"></div>
+</section>
 <section>
 	<ul id="sub2">
+		
 		<li><img src="./t/sec05.PNG"><br>국가별 질병정보</li>
 		<li><img src="./t/sec06.PNG"><br>홍보자료</li>
 		<li><img src="./t/sec07.PNG"><br>이달의 건강정보 </li>
@@ -376,23 +474,56 @@
 		<li><img src="./t/sec10.PNG"><br>공고/공시</li>
 	</ul>
 </section>
-
+<div class="clear"></div>
+<section id="sub4">
+	<ul>
+		<li>보도자료</li>
+		<li>공지사항</li>
+		<li>채용공고</li>
+		<li>주간건강과질병</li>
+		<li><img id="plus" src="./final/plus.PNG"></li>
+	</ul>
+	<img class="sub4" src="./final/sub4.PNG">
+</section>
+<section id="sub5">
+	<img src="./final/sub5.PNG">
+</section>
+<div class="clear"></div>
+<section id="sub6">
+	<img src="./final/banner1.PNG">
+	<img src="./final/banner2.PNG">
+	<img src="./final/banner3.PNG">
+</section>
 <section>
 	<ul id="sub3">
-		<li><img src="./t/sec11.PNG"></li>
-		<li><img src="./t/sec12.PNG"></li>
-		<li><img src="./t/sec13.PNG"></li>
-		<li><img src="./t/sec14.PNG"></li>
+		<li><img src="./t/sec11.PNG"><br>진짜 힘은 손 씻을 때 생긴다!<br>마블 콜라보 질병예방 캠페인</li>
+		<li><img src="./t/sec12.PNG"><br>중동지역을 방문하셨나요?<br>메르스 의심증상 발생 시 1399</li>
+		<li><img src="./t/sec13.PNG"><br>기침예절 지켜요!<br>기침예절은 감염병 예방의 기본수칙</li>
+		<li><img src="./t/sec14.PNG"><br>1399 질병관리본부 콜센터<br>질병정보 궁금할 때 감염병이 의심될 때</li>
 	</ul>
 </section>
 <div class="clear"></div>
 <footer>
+	<div id="link">
+		<ul>
+			<li>관련링크 < > </li>
+			<li>임상진료지침 디지털 가이드라인</li>
+			<li>KoGES</li>
+			<li>질병관리본부국제학술지(Osong PHRP)</li>
+			<li>만성신장병코호트연구</li>
+			<li>국민건강영양조사</li>
+			<li>국립의과학지식센터</li>
+			<li>보건복지통계</li>
+		</ul>
+	</div>
+	<div id="low">
 	<div id="address">
 		<img src="./t/foot01.PNG">
 	</div>
 	<div id="customer">
 		<img src="./t/foor02.PNG">
 	</div>
+</div>
 </footer>
 
 <p id="up"><a href="index.html"><img src="./pl/top.PNG"></a></p>
