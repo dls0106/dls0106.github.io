@@ -216,9 +216,21 @@
 		color: black;
 		font-weight: normal;
 	}
+	#fix{
+		position: fixed;
+		z-index: 900;
+		background-color: white;
+	}
+	#mainimg{
+		padding-top: 200px;
+	}
+	#bar{
+		border-bottom: 1px solid rgb(200,200,200);
+	}
 	</style>
 </head>
 <body id="page">
+<div id="fix">
 <header>
 	<div id="logo">
 	<a href="index.html"><img src="./t/name.PNG"></a><input type="text" placeholder="검색어를 입력해주세요."> <img id="se" src="./pl/search.PNG">
@@ -243,7 +255,7 @@
 	</div>
 </header>
 <div class="clear"></div>
-<nav>
+<nav id="bar">
 	<ul>
 		<li id="dropdown1">감염병
 			<ul class="dropdown1">
@@ -329,8 +341,10 @@
 		</li>
 	</ul>
 </nav>
+</div>
 <div class="clear"></div>
 <aside>
+<div id="mainimg">
 	<ul>
 		<li id="first"> 알림/자료 </li>
 		<li id="mint"> 이달의 건강소식 <img src="./pl/mint.PNG"> </li>
@@ -346,6 +360,7 @@
 <section>
 	<h2 id="main">이달의 건강소식</h2>
 </section>
+	</div>
 <section id="sub">
 	<ul>
 		<li><img src="./s/sec01.PNG"><br>코로나19 예방과 함께 알아두어야 할</li>
