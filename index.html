@@ -323,10 +323,22 @@
 		position: fixed;
 		bottom: 50px; right: 50px;
 	}
+	#mainimg{
+		padding-top: 180px;
+	}
+	#bar{
+		border-bottom: 1px solid rgb(200,200,200);
+	}
+	#fix{
+		position: fixed;
+		z-index: 900;
+		background-color: white;
+	}
+	
 	</style>
 </head>
 <body id="page">
-
+<div id="fix">
 <header>
 	<div id="logo">
 		<img src="./t/name.PNG">
@@ -353,7 +365,7 @@
 	</div>
 </header>
 <div class="clear"></div>
-<nav>
+<nav id="bar">
 	<ul>
 		<li id="dropdown1">감염병
 			<ul class="dropdown1">
@@ -439,8 +451,9 @@
 		</li>
 	</ul>
 </nav>
+	</div>
 <div class="clear"></div>
-<section>
+<section id="mainimg">
 	<img src="./t/main.PNG" width="1080">
 </section>
 <aside>
